@@ -19,7 +19,7 @@ The code was tested on Tensorflow (2.2.0) and Keras (2.3.0), in Python (3.6)
 
 **create_imbalanced_HAR_dataset:** Function that creates an imbalanced training set of the [HAR dataset](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones) and returns both the imbalanced training set and a testing set.
 
-**create_imbalanced_UCR_dataset:** Function that creates an imbalanced training set of the [TwoLeadECG dataset](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) and returns both the imbalanced training set and a testing set.
+**create_imbalanced_TwoLeadECG_dataset:** Function that creates an imbalanced training set of the [TwoLeadECG dataset](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) and returns both the imbalanced training set and a testing set.
 
 **GENDA:** Performs the training of the proposed method GENDA and generates new artificial samples.
 
