@@ -489,7 +489,7 @@ if dataset=='mnist' or dataset=='fmnist' or dataset=='har':
     # If dataset = 'har': Data generation is completed 
     ###################################################
     
-    if dataset=='mnist' or dataset=='fnist':
+    if dataset=='mnist' or dataset=='fmnist':
     
         #####6
         idx6 = idx[6]
