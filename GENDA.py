@@ -110,16 +110,15 @@ pairs_train, label_true = pairs[indx], label_tr[indx]
 
 
 
-########################### FIND THE EUCLIDEAN DISTANCE BETWEEN 2 VECTORS ###########################
-def euclidean_distance(vects):
-    """Find the Euclidean distance between two vectors.
+########################### GET THE LINEAR COMBINATION OF THE VECTORS ###########################
+def linear_combination(vects):
+    """Find the linear combination of the vectors.
 
     Arguments:
         vects: List containing two tensors of same length.
 
-    Returns:import random
-        Tensor containing euclidean distance
-        (as floating point value) between vectors.
+    Returns:
+        Tensor containing the linear combination of the vectors.
     """
 
     x,y = vects
@@ -213,7 +212,7 @@ def encoder_model():
     tower_2 = embedding_network(input_2)
    
     
-    z = layers.Lambda(euclidean_distance)([tower_1,tower_2 ])
+    z = layers.Lambda(linear_combination)([tower_1,tower_2 ])
        
     
     encoder = keras.Model(inputs=[input_1,input_2], outputs=[z])
