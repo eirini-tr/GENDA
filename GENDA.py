@@ -123,7 +123,7 @@ def linear_combination(vects):
 
     x,y = vects
        
-    u = tf.random.normal(shape=[], mean=0, stddev=1, dtype=tf.float32)
+    u = tf.random.uniform(shape=[], minval=0., maxval=1., dtype=tf.float32)
           
     sum_ = tf.math.add(u*x,y*(1-u))
     
